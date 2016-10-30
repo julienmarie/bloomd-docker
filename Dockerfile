@@ -5,10 +5,17 @@
 # forked https://github.com/julienmarie/bloomd-docker
 
 # Pull base image.
-FROM ubuntu
+FROM ubuntu:12.10
 MAINTAINER Julien Marie <jm@producture.com>
 
-RUN apt-get -y install wget
+RUN echo "deb http://archive.ubuntu.com/ubuntu quantal main universe multiverse" > /etc/apt/sources.list
+RUN apt-get update
+RUN apt-get upgrade -y
+
+# Install basic packages.
+RUN apt-get install -y software-properties-common
+RUN apt-get install -y curl git htop unzip vim wget
+
 
 ## Current binary version
 ENV BLOOMD_VERSION 0.7.4
