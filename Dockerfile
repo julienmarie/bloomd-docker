@@ -5,7 +5,7 @@
 # forked https://github.com/julienmarie/bloomd-docker
 
 # Pull base image.
-FROM ubuntu:12.10
+FROM ubuntu
 MAINTAINER Julien Marie <jm@producture.com>
 
 #RUN echo "deb http://archive.ubuntu.com/ubuntu quantal main universe multiverse" > /etc/apt/sources.list
