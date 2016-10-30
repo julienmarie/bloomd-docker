@@ -17,7 +17,7 @@ ENV BLOOMD_CFG /etc/bloomd/bloomd.conf
 # Install bloomd.
 RUN \
   mkdir -p /tmp/bloomd /data /etc/bloomd && \
-  wget https://github.com/armon/bloomd/archive/v${BLOOMD_VERSION}.tar.gz -O - \
+  wget https://github.com/armon/bloomd/archive/master.tar.gz -O - \
 	| tar -xvz --strip=1 -C /tmp/bloomd && \
   apt-get update && \
   apt-get -y install scons && \
