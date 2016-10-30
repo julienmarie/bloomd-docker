@@ -8,9 +8,9 @@
 FROM ubuntu:12.10
 MAINTAINER Julien Marie <jm@producture.com>
 
-RUN echo "deb http://archive.ubuntu.com/ubuntu quantal main universe multiverse" > /etc/apt/sources.list
-RUN apt-get update
-RUN apt-get upgrade -y
+#RUN echo "deb http://archive.ubuntu.com/ubuntu quantal main universe multiverse" > /etc/apt/sources.list
+#RUN apt-get update
+#RUN apt-get upgrade -y
 
 # Install basic packages.
 RUN apt-get install -y software-properties-common
