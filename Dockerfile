@@ -2,11 +2,11 @@
 # bloomd Dockerfile
 #
 # https://github.com/saidimu/bloomd-docker
-#
+# forked https://github.com/julienmarie/bloomd-docker
 
 # Pull base image.
 FROM dockerfile/ubuntu
-MAINTAINER Said Apale saidimu@gmail.com
+MAINTAINER Julien Marie <jm@producture.com>
 
 ## Current binary version
 ENV BLOOMD_VERSION 0.7.4

@@ -1,0 +1,18 @@
+{
+  "id": "bloomd",
+  "cmd": "/usr/local/bin/bloomd -f /etc/bloomd/bloomd.conf",
+  "cpus": 1,
+  "mem": 1024.0,
+  "instances": 1,
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "producture/bloomd",
+      "forcePullImage": true,
+      "network": "HOST",
+      "ports": [
+        8673      
+      ]
+    }
+  }
+}
