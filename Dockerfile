@@ -5,7 +5,7 @@
 # forked https://github.com/julienmarie/bloomd-docker
 
 # Pull base image.
-FROM dockerfile/ubuntu
+FROM ubuntu
 MAINTAINER Julien Marie <jm@producture.com>
 
 ## Current binary version
