@@ -8,6 +8,8 @@
 FROM ubuntu
 MAINTAINER Julien Marie <jm@producture.com>
 
+RUN apt-get -y install wget
+
 ## Current binary version
 ENV BLOOMD_VERSION 0.7.4
 
