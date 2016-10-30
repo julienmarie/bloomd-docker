@@ -8,6 +8,8 @@
 FROM ubuntu
 MAINTAINER Julien Marie <jm@producture.com>
 
+RUN apt-get update
+
 #RUN echo "deb http://archive.ubuntu.com/ubuntu quantal main universe multiverse" > /etc/apt/sources.list
 #RUN apt-get update
 #RUN apt-get upgrade -y
