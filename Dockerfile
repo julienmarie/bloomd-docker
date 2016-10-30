@@ -17,6 +17,7 @@ RUN apt-get update
 # Install basic packages.
 #RUN apt-get install -y software-properties-common
 RUN apt-get install -y curl git  unzip  wget
+RUN apt-get install -y build-essential
 
 
 ## Current binary version
